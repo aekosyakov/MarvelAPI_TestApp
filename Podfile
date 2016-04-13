@@ -6,12 +6,8 @@ platform :ios, "8.0"
 target :MarvelAPI_Test do
 
 use_frameworks!
-pod ‘Typhoon’
-pod 'ReactiveCocoa', '~> 2.5'
 pod 'SwiftHTTP', '~> 1.0.4'
 pod 'CryptoSwift'
 pod 'Alamofire', '~> 3.3'
 pod 'RandomColorSwift'
-
-
 end

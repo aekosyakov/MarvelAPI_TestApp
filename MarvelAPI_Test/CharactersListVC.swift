@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 import Alamofire
 import ObjectiveC
-import ReactiveCocoa
 
 private extension Selector {
     static let updateItems  = #selector(CharactersListVC.updateItems)

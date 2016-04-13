@@ -6,6 +6,8 @@
 //  Copyright © 2016 Alexander Kosyakov. All rights reserved.
 //
 
+import UIKit
+
 public class MarvelApiClientImpl: NSObject {
     
     public enum ApiType {
