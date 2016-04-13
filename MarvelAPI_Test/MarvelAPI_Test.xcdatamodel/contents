@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Character" representedClassName=".Character" syncable="YES">
+        <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modified" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourseURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="comics" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Comics" inverseName="character" inverseEntity="Comics" syncable="YES"/>
+        <relationship name="series" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Serie" inverseName="character" inverseEntity="Serie" syncable="YES"/>
+        <relationship name="stories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Story" inverseName="character" inverseEntity="Story" syncable="YES"/>
+    </entity>
+    <entity name="Comics" representedClassName=".Comics" parentEntity="ItemObject" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="comics" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="ItemObject" representedClassName=".ItemObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbData" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Serie" representedClassName=".Serie" parentEntity="ItemObject" syncable="YES">
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="series" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="Story" representedClassName=".Story" parentEntity="ItemObject" syncable="YES">
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="stories" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Comics" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="ItemObject" positionX="0" positionY="63" width="128" height="90"/>
+        <element name="Serie" positionX="-18" positionY="27" width="128" height="60"/>
+        <element name="Story" positionX="-36" positionY="9" width="128" height="60"/>
+    </elements>
+</model>

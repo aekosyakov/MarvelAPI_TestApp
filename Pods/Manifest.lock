@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (3.3.1)
+  - CryptoSwift (0.3.1)
+  - RandomColorSwift (0.1.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SwiftHTTP (1.0.5)
+  - Typhoon (3.4.5):
+    - Typhoon/no-arc (= 3.4.5)
+  - Typhoon/no-arc (3.4.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - CryptoSwift
+  - RandomColorSwift
+  - ReactiveCocoa (~> 2.5)
+  - SwiftHTTP (~> 1.0.4)
+  - Typhoon
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  CryptoSwift: baf01e3fb3226c0155cd54c266be882b13d45d5e
+  RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SwiftHTTP: edb45e72f27d1d95d328d2b2c16a61aa94f1e9f7
+  Typhoon: 200100687af3233ec5ed019064df3c9ffe350475
+
+PODFILE CHECKSUM: 3c8303142a69750d51782df82ace3734e23941f1
+
+COCOAPODS: 1.0.0.beta.6
